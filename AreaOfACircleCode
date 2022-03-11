@@ -1,0 +1,28 @@
+package com.mycompany.areaofacircleencapsulation;
+import java.util.Scanner;
+
+   public static void main(String[] args) {
+       
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter the radius of the circle");
+    double rad = input.nextDouble();
+    input.close();
+    
+    CircleAreaCalculator x = new CircleAreaCalculator
+            x.radius(System.in);
+
+    System.out.println(CircleAreaCalculator.getarea(x.radius));
+
+public class CircleAreaCalculator {
+        double rad, area, PI;
+	
+	public void radius(int r){
+                rad = r;
+        }
+        public double getarea(int a) {
+		area = Math.PI * rad * rad; 
+		return area;
+	}       
+
+}
+}
