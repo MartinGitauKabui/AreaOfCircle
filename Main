@@ -1,0 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.areacalc;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Martin Gitau Kabui
+ */
+public class Main {
+    
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the radius of the circle");
+        double rad = input.nextDouble();
+        
+        input.close();
+        
+        Circle x = new Circle(rad);
+
+        System.out.println(x.getArea());
+    }
+}
